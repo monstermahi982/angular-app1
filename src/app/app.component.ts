@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app1';
   name = "mahesh gaikwad"
+  count = 0
+  add(){
+    this.count ++
+  }
+  sub(){
+    this.count --
+    if(this.count == -10){
+      alert('limit reached')
+      this.count = 0
+    }
+  }
 }
